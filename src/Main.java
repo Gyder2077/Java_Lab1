@@ -1,3 +1,4 @@
+
 import java.util.Random;
 import java.lang.Math;
 
@@ -21,7 +22,10 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        int[] s = {16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+        int[] s = new int[16];
+        for (int i = 0; i < 16; i++) {
+            s[i] = 16 - i;
+        }
 
         double[] x = new double[15];
         for (int i = 0; i < 15; i++) {
